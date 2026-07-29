@@ -12,7 +12,7 @@ auditing its own enrichment data. What started as following a YouTube guide for 
 I exposed an Azure VM as an RDP honeypot and collected real world security events.
 
 Said guide had a beautiful map that placed attacker IP's into world map but I found out that the geoip list provided was incorrect and had conflicting duplicates. I changed the watchlist with KQL's built-in `geo_info_from_ip_address()`,
-verified attributions against RDAP registry data, and built a Sentinel analytics rule to catch
+verified attributions data, and built a Sentinel analytics rule to catch
 any successful compromise, in-case my VM turns into a crypto-miner. All queries, tooling, and IOCs are in this repo.
 
 **Before (Above) and After (Below) — The Watchlist:**
