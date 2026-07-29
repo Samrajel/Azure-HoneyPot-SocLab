@@ -11,7 +11,7 @@ turned into me understanding how the lab actually worked.
 
 ## TL;DR
 
-I exposed an Azure VM as an RDP honeypot and collected **re**al world security events.
+I exposed an Azure VM as an RDP honeypot and collected real world security events.
 
 Said guide had a beautiful map that placed attacker IP's into world map but I found out that the geoip list provided was incorrect and had conflicting duplicates. I changed the watchlist with KQL's built-in `geo_info_from_ip_address()`,
 verified attributions against RDAP registry data, and built a Sentinel analytics rule to catch
@@ -19,7 +19,7 @@ any successful compromise, in-case my VM turns into a crypto-miner. All queries,
 
 **Before (Above) and After (Below) — The Watchlist:**
 
-![Attack maps Screenshot](images/0_map_watchlist.png)
+![Attack maps Screenshot](images/0_Map_Watchlist.png)
 
 ---
 
@@ -120,9 +120,9 @@ writeup deserves a second, independent source. So far i haven't done that
 
 ## 5. Detection engineering: catching the successful logon
 
-A honeypot with the firewall off will eventually be compromised — that's the design of the lab.
+A honeypot with the firewall off will eventually be compromised, that's the design of the lab.
 
-The signal that it happened is a *successful* logon (EventID 4624) from an external IP. That's the moment the
+The signal that if it happens is a *successful* logon (EventID 4624) from an external IP. That's the moment the
 honeypot stops being my lab and starts being someone else's crypto-miner. So I made a scheduled Sentinel
 analytics rule watches for that:
 
