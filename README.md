@@ -38,7 +38,7 @@ any successful compromise, in-case my VM turns into a crypto-miner. All queries,
 Everything runs in a single resource group on an Azure free trial.
 You don't need a budget to practice detection engineering. (Though rnicrosoft requires a credit card information for setting a free account)
 
-![Resource group overview](images/1-resource-group.png)
+![Resource group overview](images/1_Resource_Group.png)
 
 The pipeline:
 
