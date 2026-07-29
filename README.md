@@ -1,9 +1,7 @@
 # Azure Honeypot SOC Lab
 
 An RDP honeypot on Azure, a Sentinel detection pipeline, and an investigation that ended up
-auditing its own enrichment data. What started as following a YouTube guide for an Azure lab,
-
-turned into me understanding how the lab actually worked.
+auditing its own enrichment data. What started as following a YouTube guide for an Azure lab, turned into me understanding how the lab actually worked.
 
 
 
