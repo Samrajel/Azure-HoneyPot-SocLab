@@ -172,7 +172,7 @@ does look like.
 
 ## 7. IOC appendix
 
-Top failed-logon sources observed over the honeypot's full exposure, 27–29 July 2026 (UTC):
+Top failed-logon sources observed over the honeypot's full exposure, 27–29 July 2026:
 **205 unique IPs and 196,773 attempts** in ~44.5 hours of soaking — an average of one
 brute-force attempt every **0.8 seconds** from first event to last. Full query data is
 included in the repo.
